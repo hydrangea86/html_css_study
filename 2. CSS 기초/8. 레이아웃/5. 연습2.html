@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* reset */
+        ul, li {
+            margin: 0;
+            padding: 0;
+            /* li태크 앞에 있는 까만점제거 */
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* layout */
+        nav {
+            background: tomato;
+            width: 100%;
+        }
+
+        /* 세부적으로 태그 쓰기 */
+        nav ul.gnb {
+            background:yellow;
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        nav ul.gnb li {
+            background: aqua;
+            border: 1px solid blue;
+            box-sizing: border-box;
+            width: 20%;
+            float: left;
+            padding-bottom: 8px;
+            text-align: center;
+
+        }
+
+        nav ul.gnb li:hover {
+            background: orange;
+            border-bottom: 3px solid crimson;
+        }
+
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <!-- ul.gnb>li*5>a -->
+
+        <ul class="gnb clearfix">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="#">BOARD</a></li>
+            <li><a href="#">LOGIN</a></li>
+            <li><a href="#">JOIN</a></li>
+        </ul>
+
+    </nav>
+
+</body>
+</html>

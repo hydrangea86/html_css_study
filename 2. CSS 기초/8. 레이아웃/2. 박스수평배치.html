@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 150px;
+            height: 100px;
+            background: orange;
+            color: #fff;
+            margin: 10px;
+            font-size: 50px;
+            text-align: center;
+            /* 텍스트 상하정렬: lnie-height와 height와 맞춤 */
+            line-height: 100px;
+
+            /* 박스 수평 배치 */
+            float: left;
+        }
+
+        /* n앞의 숫자로 열을 제어 ex) 3열의 레이아웃 */
+
+        .box:nth-child(3n+1) {
+            clear: both;
+            /* clear는 방향에 상관없이 both를 사용이 용이함 */
+        }
+
+        .container {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- .box{$}*3 -->
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
+        <div class="box">7</div>
+        <div class="box">8</div>
+        <div class="box">9</div>
+        <div class="box">10</div>
+        <div class="box">11</div>
+        <div class="box">12</div>
+    </div>
+
+</body>
+
+</html>

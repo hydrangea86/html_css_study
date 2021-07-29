@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        /* html 눈에 보이진 않지만 기본 폰트 사이즈는 16px */
+        html {
+            font-size: 10px;
+        }
+        body {
+            font-size: 14px;
+        }
+        div {
+            border: 2px solid gray;
+        }
+        .root {
+            width: 100em;
+        }
+
+        .parent {
+            width: 50%;
+            height: 30rem;
+            font-size: 2em;
+        }
+        .child {
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="root">
+        <div class="parent">Parent
+            <div class="child">Child1</div>
+            <div class="child">Child2</div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* 일치 선택자 모두 충족이 될 때 (no space)*/
+        span.orange {
+            background: tomato;
+        }
+
+        li.orange{
+            background: orange;
+        }
+
+        div#apple{
+            background: red;
+        }
+
+        a.btn.primary.low#change{
+            color: gray;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <a href="#" class="btn primary low" id="change">안녕</a>
+
+    <!-- emmet 문법 div>ul>li*3 / id는 중복 안됌 / class는 중복 가능 -->
+    <div>
+        <ul>
+            <li id="apple">사과</li>
+            <li>딸기</li>
+            <li class="orange">오렌지</li>
+        </ul>
+        <!-- div+p+span -->
+        <div>당근</div>
+        <p >토마토</p>
+        <span class="orange">오렌지</span>
+
+    </div>
+
+
+</body>
+</html>

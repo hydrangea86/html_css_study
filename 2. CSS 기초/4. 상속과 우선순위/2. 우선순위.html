@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        div {
+            color: red;
+        }
+
+        #c-y {
+            color: yellow;
+        }
+        
+        .c-g {
+            color: green;
+        }
+
+        div {
+            color: blue;
+        }
+
+        body {
+            color: aqua;
+        }
+
+        #aaa .bbb h1 {
+            color: gray;
+        }
+
+        div#aaa div.bbb h1 {
+            color: pink;
+        }
+
+        .bbb h1 {
+            display: orangered; 
+        }
+
+        div#aaa .bbb h1 {
+            color: greenyellow
+        }
+
+    </style>
+</head>
+<body>
+    
+<div id="c-y" class="c-g" style="color: orange;">HELLO</div>
+
+<div id="c-y" class="c-g">HELLO2</div>
+
+<div class="c-g">HELLO3</div>
+
+<div>HELLO4</div>
+
+<!-- p는 body 상속 -->
+<P>HELLO5</P>
+
+
+<!-- .aaa>.bbb>h1 -->
+<div id="aaa">
+    <div class="bbb">
+        <h1>메롱메롱~</h1>
+    </div>
+</div>
+
+</body>
+</html>

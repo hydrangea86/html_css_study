@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+        .container{
+            width: 700px;
+            padding: 20px;
+            border: 3px solid red;
+        }
+        .container2{
+            width: 700px;
+            padding: 20px;
+            border: 3px solid blue;
+            /* height 안쓰면 auto 기본설정 됌 */
+            
+        
+            /* 두번째 방법 비추천 */
+            /* overflow: auto; */
+        }
+
+        .container3{
+            width: 700px;
+            padding: 20px;
+            border: 3px solid orange;
+        }
+        .box {
+            width: 200px;
+            height: 150px;
+            border: 3px solid green;
+            background: yellowgreen;
+            border-radius: 10px;
+            float: left;
+        }
+        
+        .clearfix::after {
+            content: '';
+            display: block;
+            clear:both
+        }
+        /* 첫번째 방법 비추천 */
+        .clearbox {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- .container>.box*3 -->
+   
+    <div class="container clearfix">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <!-- <div class="clearbox"></div> -->
+    </div>
+   
+    <div class="container2 clearfix">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <!-- <div class="clearbox"></div> -->
+    </div>
+
+    <div class="container3 clearfix">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <!-- <div class="clearbox"></div> -->
+    </div>
+
+</body>
+</html>

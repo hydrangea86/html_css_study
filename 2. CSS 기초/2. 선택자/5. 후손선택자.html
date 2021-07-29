@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    /* 자식보다 후손을 디폴트로 초기 설정 유리*/
+        div .orange {
+            color: orange;
+        }
+
+
+        /* 그룹 선택자 콤마 이용 예시 */
+        .orange, .apple {
+            font-size: #;
+        }
+    </style>
+</head>
+<body>
+    
+    <em>안녕안녕</em>
+
+    <!-- emmet 문법 div>ul>li*3 / id는 중복 안됌 / class는 중복 가능 -->
+
+    <div>
+        <em>메롱메롱</em>
+        <ul>
+            <em>잘가잘가</em>
+            <li id="apple">사과</li>
+            <li>딸기</li>
+            <li class="orange">오렌지</li>
+        </ul>
+        <!-- div+p+span -->
+        <div>당근</div>
+        <p >토마토</p>
+        <span class="orange">오렌지</span>
+
+    </div>
+
+
+</body>
+</html>
